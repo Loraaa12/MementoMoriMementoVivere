@@ -41,10 +41,10 @@ const Candle = ({ x, y }) => {
 const NavigationIcon = ({ to, icon, label, position, invert = false }) => (
   <Link 
     to={to}
-    className="absolute flex flex-col items-center p-4 group"
+    className="absolute flex flex-col items-center p-2 sm:p-4 group"
     style={position}
   >
-    <div className="h-48 w-auto transform transition-transform duration-300 group-hover:scale-110">
+    <div className="h-24 sm:h-48 w-auto transform transition-transform duration-300 group-hover:scale-110">
       <img 
         src={icon}
         alt={label}
@@ -54,7 +54,7 @@ const NavigationIcon = ({ to, icon, label, position, invert = false }) => (
         }}
       />
     </div>
-    <span className="mt-3 text-gray-400 text-center max-w-[180px] text-base group-hover:text-gray-300 transition-colors duration-300">{label}</span>
+    <span className="mt-2 sm:mt-3 text-gray-400 text-center max-w-[120px] sm:max-w-[180px] text-sm sm:text-base group-hover:text-gray-300 transition-colors duration-300">{label}</span>
   </Link>
 );
 
@@ -62,7 +62,7 @@ const MainPage = () => {
   const { translations } = useTranslation();
 
   return (
-    <div className="h-screen bg-black text-white relative overflow-hidden">
+    <div className="min-h-screen bg-black text-white relative overflow-hidden">
       {/* Translation Button */}
       <div className="absolute top-4 right-4 z-20">
         <TranslationButton />
@@ -75,14 +75,14 @@ const MainPage = () => {
       <Candle x="97%" y="5%" />
       
       {/* Main content */}
-      <div className="container mx-auto px-4 h-full flex flex-col justify-between py-12 relative z-10">
+      <div className="container mx-auto px-4 min-h-screen flex flex-col justify-between py-6 sm:py-12 relative z-10">
         {/* Title at the top */}
         <div className="text-center">
           <Link to="/philosophy" className="hover:opacity-80 transition-opacity">
-            <h1 className="text-5xl font-bold text-gray-200 mb-3 font-['Playfair_Display'] italic">
+            <h1 className="text-3xl sm:text-5xl font-bold text-gray-200 mb-2 sm:mb-3 font-['Playfair_Display'] italic">
               Memento Mori
             </h1>
-            <p className="text-gray-400 text-xl">
+            <p className="text-gray-400 text-lg sm:text-xl">
               {translations.rememberThatYouWillDie}
             </p>
           </Link>
@@ -95,43 +95,42 @@ const MainPage = () => {
             to="/page1" 
             icon={gloryImage} 
             label={translations.theHerosDeath}
-            position={{ top: '10%', left: '5%' }}
+            position={{ top: '5%', left: '5%' }}
             invert={true}
           />
           <NavigationIcon 
             to="/page2" 
             icon={echoImage} 
             label={translations.theEchoOfTheLost}
-            position={{ top: '10%', right: '5%' }}
+            position={{ top: '5%', right: '5%' }}
           />
           <NavigationIcon 
             to="/page3" 
             icon={flameImage} 
             label={translations.theWarmFlame}
-            position={{ top: '60%', left: '22%' }}
+            position={{ top: '50%', left: '5%' }}
           />
           <NavigationIcon 
             to="/page4" 
             icon={rockImage} 
             label={translations.theDefiance}
-            position={{ top: '60%', right: '20%' }}
+            position={{ top: '50%', right: '5%' }}
           />
           <NavigationIcon 
             to="/page5" 
             icon={skullImage} 
             label={translations.theBeautifulCorpse}
-            position={{ top: '40%', left: '50%', transform: 'translate(-50%, -50%)' }}
-
+            position={{ top: '30%', left: '50%', transform: 'translate(-50%, -50%)' }}
           />
         </div>
         
         {/* Title at the bottom */}
         <div className="text-center">
           <Link to="/philosophy" className="hover:opacity-80 transition-opacity">
-            <h1 className="text-5xl font-bold text-gray-200 mb-3 font-['Playfair_Display'] italic">
+            <h1 className="text-3xl sm:text-5xl font-bold text-gray-200 mb-2 sm:mb-3 font-['Playfair_Display'] italic">
               Memento Vivere
             </h1>
-            <p className="text-gray-400 text-xl">
+            <p className="text-gray-400 text-lg sm:text-xl">
               {translations.soLive}
             </p>
           </Link>
