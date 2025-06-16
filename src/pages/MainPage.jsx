@@ -8,7 +8,7 @@ import echoImage from '../assets/images/echo.jpg';
 import flameImage from '../assets/images/candle.jpg';
 import TranslationButton from '../components/TranslationButton';
 
-const Candle = ({ x, y, mobile = false }) => {
+const Candle = ({ x, y }) => {
   const [flicker, setFlicker] = useState(1);
   
   useEffect(() => {
@@ -19,7 +19,7 @@ const Candle = ({ x, y, mobile = false }) => {
   }, []);
 
   return (
-    <div className={`absolute ${mobile ? 'block sm:hidden' : 'hidden sm:block'}`} style={{ left: x, top: y }}>
+    <div className="absolute hidden sm:block" style={{ left: x, top: y }}>
       <div className="relative">
         {/* Candle flame */}
         <div 
@@ -73,10 +73,6 @@ const MainPage = () => {
       <Candle x="10%" y="5%" />
       <Candle x="90%" y="3%" />
       <Candle x="97%" y="5%" />
-
-      {/* Mobile candles */}
-      <Candle x="15%" y="10%" mobile={true} />
-      <Candle x="85%" y="15%" mobile={true} />
       
       {/* Main content */}
       <div className="container mx-auto px-4 min-h-screen flex flex-col justify-between py-6 sm:py-12 relative z-10">
