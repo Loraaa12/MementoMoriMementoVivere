@@ -22,14 +22,16 @@ const Page5 = () => {
       </div>
 
       {/* Works Grid */}
-      <div className="grid grid-cols-3 gap-8">
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.hairJewelryTitle}</h2>
-          <img 
-            src={hairImage}
-            alt="Victorian Hair Jewelry"
-            className="w-full aspect-video object-cover rounded-lg mb-4"
-          />
+          <div className="relative w-full pt-[56.25%] mb-4">
+            <img 
+              src={hairImage}
+              alt="Victorian Hair Jewelry"
+              className="absolute inset-0 w-full h-full object-cover rounded-lg"
+            />
+          </div>
           <div className="text-gray-400 text-sm mb-4 italic">
           {translations.visualArt}
           </div>
@@ -46,13 +48,15 @@ const Page5 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.vanitasTitle}</h2>
-          <img 
-            src={vanitasImage}
-            alt="Vanitas Still Life by Pieter Claesz"
-            className="w-full aspect-video object-cover rounded-lg mb-4"
-          />
+          <div className="relative w-full pt-[56.25%] mb-4">
+            <img 
+              src={vanitasImage}
+              alt="Vanitas Still Life by Pieter Claesz"
+              className="absolute inset-0 w-full h-full object-cover rounded-lg"
+            />
+          </div>
           <div className="text-gray-400 text-sm mb-4 italic">
           {translations.visualArt}
           </div>
@@ -69,13 +73,15 @@ const Page5 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.diaTitle}</h2>
-          <img 
-            src={diaImage}
-            alt="Dia De Los Muertos Sugar Skulls"
-            className="w-full aspect-video object-cover rounded-lg mb-4"
-          />
+          <div className="relative w-full pt-[56.25%] mb-4">
+            <img 
+              src={diaImage}
+              alt="Dia De Los Muertos Sugar Skulls"
+              className="absolute inset-0 w-full h-full object-cover rounded-lg"
+            />
+          </div>
           <div className="text-gray-400 text-sm mb-4 italic">
           {translations.cultural}
           </div>
@@ -92,13 +98,15 @@ const Page5 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.egyptTitle}</h2>
-          <img 
-            src={egyptianImage}
-            alt="Egyptian Burial Rituals"
-            className="w-full aspect-video object-cover rounded-lg mb-4"
-          />
+          <div className="relative w-full pt-[56.25%] mb-4">
+            <img 
+              src={egyptianImage}
+              alt="Egyptian Burial Rituals"
+              className="absolute inset-0 w-full h-full object-cover rounded-lg"
+            />
+          </div>
           <div className="text-gray-400 text-sm mb-4 italic">
           {translations.historical}
           </div>
@@ -115,13 +123,15 @@ const Page5 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.cryptTitle}</h2>
-          <img 
-            src={cryptImage}
-            alt="Capuchin Crypt"
-            className="w-full aspect-video object-cover rounded-lg mb-4"
-          />
+          <div className="relative w-full pt-[56.25%] mb-4">
+            <img 
+              src={cryptImage}
+              alt="Capuchin Crypt"
+              className="absolute inset-0 w-full h-full object-cover rounded-lg"
+            />
+          </div>
           <div className="text-gray-400 text-sm mb-4 italic">
           {translations.historical}
           </div>
@@ -138,13 +148,15 @@ const Page5 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.masksTitle}</h2>
-          <img 
-            src={maskImage}
-            alt="Death Mask"
-            className="w-full aspect-video object-cover rounded-lg mb-4"
-          />
+          <div className="relative w-full pt-[56.25%] mb-4">
+            <img 
+              src={maskImage}
+              alt="Death Mask"
+              className="absolute inset-0 w-full h-full object-cover rounded-lg"
+            />
+          </div>
           <div className="text-gray-400 text-sm mb-4 italic">
           {translations.historical}
           </div>

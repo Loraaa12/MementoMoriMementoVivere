@@ -131,26 +131,26 @@ const MainPage = () => {
               to="/page1" 
               icon={gloryImage} 
               label={translations.theHerosDeath}
-              position={{ top: '10%', left: '5%' }}
+              position={{ top: '5%', left: '10%' }}
               invert={true}
             />
             <NavigationIcon 
               to="/page2" 
               icon={echoImage} 
               label={translations.theEchoOfTheLost}
-              position={{ top: '10%', right: '5%' }}
+              position={{ top: '5%', right: '10%' }}
             />
             <NavigationIcon 
               to="/page3" 
               icon={flameImage} 
               label={translations.theWarmFlame}
-              position={{ top: '60%', left: '5%' }}
+              position={{ top: '65%', left: '10%' }}
             />
             <NavigationIcon 
               to="/page4" 
               icon={rockImage} 
               label={translations.theDefiance}
-              position={{ top: '60%', right: '5%' }}
+              position={{ top: '65%', right: '10%' }}
             />
             <NavigationIcon 
               to="/page5" 
