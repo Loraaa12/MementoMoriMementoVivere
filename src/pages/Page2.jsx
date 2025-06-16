@@ -15,8 +15,8 @@ const Page2 = () => {
       </div>
 
       {/* Works Grid */}
-      <div className="grid grid-cols-3 gap-8">
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.journeyToOneselfTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.literature}
@@ -39,7 +39,7 @@ const Page2 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.tearsInHeavenTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.music}
@@ -60,7 +60,7 @@ const Page2 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.cocoTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.film}
@@ -81,7 +81,7 @@ const Page2 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.terrorManagementTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.scientific}
@@ -102,7 +102,7 @@ const Page2 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.anticipatoryGriefTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.scientific}
@@ -124,7 +124,7 @@ const Page2 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.griefObservedTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.literature}

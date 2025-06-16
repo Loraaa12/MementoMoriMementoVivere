@@ -16,8 +16,8 @@ const Page3 = () => {
       </div>
 
       {/* Works Grid */}
-      <div className="grid grid-cols-3 gap-8">
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.selflessnessTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.science}
@@ -38,7 +38,7 @@ const Page3 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.returningHomeTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.literature}
@@ -60,7 +60,7 @@ const Page3 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.meditationsTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.philosophy}
@@ -81,7 +81,7 @@ const Page3 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.logotherapyTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.philosophy}
@@ -102,7 +102,7 @@ const Page3 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.ourTownTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.literature}
@@ -124,7 +124,7 @@ const Page3 = () => {
           </a>
         </div>
 
-        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gray-800/30">
+        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-gray-800/30">
           <h2 className="text-xl font-semibold mb-4">{translations.leanOnMeTitle}</h2>
           <div className="text-gray-400 text-sm mb-4 italic">
             {translations.music}
